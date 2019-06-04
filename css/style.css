@@ -126,6 +126,10 @@ main .products article {
   background: #ddd;
 }
 
+main .products article span {
+  font-weight: bold;
+}
+
 main .products article p {
   margin: 0;
 }

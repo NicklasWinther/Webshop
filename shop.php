@@ -17,8 +17,8 @@
             <img src="img/logo.png" alt="">
             <nav>
                 <ul>
-                    <li><a href="index.php" class="active">Forside</a></li>
-                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="index.php">Forside</a></li>
+                    <li><a href="shop.php" class="active">Shop</a></li>
                     <li><a href="#">Garanti</a></li>
                     <li><a href="#">Om os</a></li>
                     <li><a href="#">Kontak</a></li>
@@ -49,26 +49,92 @@
                 Ducimus animi eligendi reiciendis, doloribus aliquam ratione tempore omnis porro mollitia possimus error atque laborum dolores necessitatibus fugiat voluptas magnam natus voluptate unde veniam tenetur similique impedit! Quaerat, veritatis sed!
                 Sunt accusamus asperiores animi molestias explicabo omnis molestiae.</p>
             <main>
-                <h2>Nyeste produkter</h2>
-                <hr>
+                <h3>Kategori</h3>
+                <select name="" id="">
+                    <option value="">-</option>
+                    <option value="">Frugt</option>
+                    <option value="">Grønt</option>
+                </select>
                 <div class="products">
                     <article>
+                        <h2>Æbler</h2>
+                        <img src="img/aebler.jpg" alt="Æbler">
+                        <p>Kurv med æbler</p>
+                        <p><span>Pris: </span>25 kr.</p>
+                        <p><span>Kategori: </span>Frugt</p>
+                        <p><span>Dato: </span>1/1-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
+                    </article>
+                    <article>
+                        <h2>Appelsiner</h2>
+                        <img src="img/Appelsiner.jpg" alt="Appelsiner">
+                        <p>Kurv appelsiner</p>
+                        <p><span>Pris: </span>27 kr.</p>
+                        <p><span>Kategori: </span>Frugt</p>
+                        <p><span>Dato: </span>5/1-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
+                    </article>
+                    <article>
+                        <h2>Bananer</h2>
+                        <img src="img/bananer.jpg" alt="Bananer">
+                        <p>Håndfuld bananer</p>
+                        <p><span>Pris: </span>6 kr.</p>
+                        <p><span>Kategori: </span>Frugt</p>
+                        <p><span>Dato: </span>25/1-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
+                    </article>
+                    <article>
+                        <h2>Gulerødder</h2>
+                        <img src="img/guleroedder.jpg" alt="Gulerødder">
+                        <p>Lille bunke gulerødder</p>
+                        <p><span>Pris: </span>12 kr.</p>
+                        <p><span>Kategori: </span>Grønt</p>
+                        <p><span>Dato: </span>3/2-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
+                    </article>
+                    <article>
+                        <h2>Agurk</h2>
+                        <img src="img/agurk.jpg" alt="Agurk">
+                        <p>En agurk</p>
+                        <p><span>Pris: </span>5 kr.</p>
+                        <p><span>Kategori: </span>Grønt</p>
+                        <p><span>Dato: </span>5/2-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
+                    </article>
+                    <article>
+                        <h2>Løg</h2>
                         <img src="img/loeg.jpg" alt="Løg">
                         <p>En masse løg!</p>
                         <p><span>Pris: </span>30 kr.</p>
-                        <button> KØB</button>
+                        <p><span>Kategori: </span>Grønt</p>
+                        <p><span>Dato: </span>10/2-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
                     </article>
                     <article>
+                        <h2>Melon</h2>
                         <img src="img/melon.jpg" alt="Melon">
                         <p>En enkelt skive melon!</p>
                         <p><span>Pris: </span>2 kr.</p>
-                        <button> KØB</button>
+                        <p><span>Kategori: </span>Frugt</p>
+                        <p><span>Dato: </span>20/2-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
                     </article>
                     <article>
+                        <h2>Radiser</h2>
                         <img src="img/radiser.jpg" alt="Radiser">
                         <p>Bunke radiser</p>
                         <p><span>Pris: </span>20 kr.</p>
-                        <button> KØB</button>
+                        <p><span>Kategori: </span>Grønt</p>
+                        <p><span>Dato: </span>10/3-2019</p>
+                        <p><span>Oprettet af: </span>Nicklas Winther</p>
+                        <button>KØB</button>
                     </article>
                 </div>
             </main>
