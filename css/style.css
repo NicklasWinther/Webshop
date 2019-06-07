@@ -242,4 +242,33 @@ footer article:last-child {
 ::-webkit-scrollbar-thumb:hover {
   background: #00b300;
 }
+
+@media screen and (max-width: 1300px) {
+  .wrapper,
+  footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .products article {
+    width: 48%;
+  }
+  aside {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper,
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .products article {
+    width: 98%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
