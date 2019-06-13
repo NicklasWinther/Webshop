@@ -31,6 +31,8 @@ h6 {
 aside {
   width: 15%;
   background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 aside img {
@@ -57,6 +59,8 @@ aside nav ul li a {
   text-decoration: none;
   padding: 15px;
   display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 aside nav ul li a.active {
@@ -65,6 +69,18 @@ aside nav ul li a.active {
 
 aside nav ul li a:hover {
   background-color: #eee;
+}
+
+aside nav ul li a.login:hover {
+  cursor: pointer;
+}
+
+aside nav ul li form {
+  padding-left: 15px;
+}
+
+aside nav ul li.hide {
+  display: none;
 }
 
 .container {
@@ -95,6 +111,13 @@ header .top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #eee;
+}
+
+header .top > i {
+  display: none;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
 header .top .social a {
@@ -112,6 +135,45 @@ header .top .basket a {
   margin-right: 10px;
 }
 
+main form {
+  width: 98%;
+  margin: 1%;
+  text-align: left;
+}
+
+main form label {
+  display: block;
+}
+
+main form input,
+main form textarea,
+main form select {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 50%;
+  outline: none;
+  resize: none;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main form input[type="submit"] {
+  width: auto;
+  padding: 20px 30px;
+  border: none;
+  background: green;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #00b800;
+}
+
 main .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +186,16 @@ main .products article {
   width: 31.33%;
   margin: 1%;
   background: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .products article span {
@@ -145,10 +217,13 @@ main .products article button {
   background-color: green;
   color: white;
   font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main .products article button:hover {
   cursor: pointer;
+  background-color: #00b800;
 }
 
 footer {
@@ -251,7 +326,12 @@ footer article:last-child {
 }
 
 @media screen and (max-width: 1150px) {
-  main .products article {
+  main form input,
+  main form textarea,
+  main form select {
+    width: 100%;
+  }
+  main form .products article {
     width: 48%;
   }
   aside {
@@ -266,9 +346,39 @@ footer article:last-child {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
+  main form input,
+  main form textarea,
+  main form select {
+    width: 100%;
+  }
   main .products article {
     width: 98%;
+  }
+  .wrapper .top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .wrapper .top > i {
+    display: block;
+  }
+  .wrapper aside {
+    -webkit-transform: translateX(-25vw);
+            transform: translateX(-25vw);
+    z-index: 1;
+    width: 0;
+  }
+  .wrapper aside.show {
+    -webkit-transform: none;
+            transform: none;
+    width: 50%;
+  }
+  .wrapper aside.show .container {
+    overflow: hidden;
+  }
+  .wrapper .container {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

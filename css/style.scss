@@ -25,6 +25,7 @@ h6 {
 aside {
   width: 15%;
   background: white;
+  transition: 0.3s;
   img {
     width: 70%;
     display: block;
@@ -45,12 +46,22 @@ aside {
           text-decoration: none;
           padding: 15px;
           display: block;
+          transition: 0.3s;
           &.active {
             background-color: #eee;
           }
           &:hover {
             background-color: #eee;
           }
+          &.login:hover {
+            cursor: pointer;
+          }
+        }
+        form {
+          padding-left: 15px;
+        }
+        &.hide {
+          display: none;
         }
       }
     }
@@ -73,6 +84,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #eee;
+    > i {
+      display: none;
+      padding: 10px;
+      font-size: 1.5rem;
+    }
     .social {
       a {
         color: black;
@@ -92,6 +109,38 @@ header {
   }
 }
 main {
+  form {
+    width: 98%;
+    margin: 1%;
+    text-align: left;
+    label {
+      display: block;
+    }
+    input,
+    textarea,
+    select {
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 50%;
+      outline: none;
+      resize: none;
+      display: block;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: auto;
+      padding: 20px 30px;
+      border: none;
+      background: green;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        background-color: lighten(green, 11%);
+      }
+    }
+  }
   .products {
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +148,9 @@ main {
       width: 31.33%;
       margin: 1%;
       background: #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       span {
         font-weight: bold;
       }
@@ -115,14 +167,15 @@ main {
         background-color: green;
         color: white;
         font-weight: bold;
+        transition: 0.3s;
         &:hover {
           cursor: pointer;
+          background-color: lighten(green, 11%);
         }
       }
     }
   }
 }
-
 footer {
   width: 80%;
   margin: 0 auto;
@@ -206,8 +259,17 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
-  main .products article {
-    width: 48%;
+  main {
+    form {
+      input,
+      textarea,
+      select {
+        width: 100%;
+      }
+      .products article {
+        width: 48%;
+      }
+    }
   }
   aside {
     width: 25%;
@@ -221,8 +283,42 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
-  main .products article {
-    width: 98%;
+@media screen and (max-width: 650px) {
+  main {
+    form input,
+    form textarea,
+    form select {
+      width: 100%;
+    }
+    .products article {
+      width: 98%;
+    }
+  }
+
+  .wrapper {
+    .top {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      > i {
+        display: block;
+      }
+    }
+    aside {
+      transform: translateX(-25vw);
+      z-index: 1;
+      width: 0;
+      &.show {
+        transform: none;
+        width: 50%;
+      }
+      &.show .container {
+        overflow: hidden;
+        // width: 50%;
+      }
+    }
+    .container {
+      width: 100%;
+    }
   }
 }
