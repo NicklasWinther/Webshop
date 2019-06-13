@@ -41,6 +41,9 @@ aside {
       margin: 0;
       list-style: none;
       li {
+        &.hide {
+          display: none;
+        }
         a {
           color: black;
           text-decoration: none;
@@ -58,10 +61,27 @@ aside {
           }
         }
         form {
+          width: 100%;
           padding-left: 15px;
-        }
-        &.hide {
-          display: none;
+
+          input {
+            width: 80%;
+            padding: 3px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+          }
+          input[type="submit"] {
+            border: none;
+            background: green;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            padding: 6px;
+            &:hover {
+              cursor: pointer;
+              background-color: lighten(green, 11%);
+            }
+          }
         }
       }
     }

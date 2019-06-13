@@ -37,8 +37,10 @@
                                 <input type="submit" value="Log ind">
                             </form>
                         </li>
+                    <?php }
+                if (!isset($_SESSION['username'])) { ?>
+                        <li><a href="register.php" <?php echo $title == "Opret bruger" ? "class='active'" : ""; ?>>Opret bruger</a></li>
                     <?php } ?>
-                    <li><a href="#">Opret bruger</a></li>
                 </ul>
             </nav>
         </aside>

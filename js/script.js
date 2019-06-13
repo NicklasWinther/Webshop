@@ -1,8 +1,9 @@
-let hide = document.querySelector(" aside .form");
-if (hide != null) {
-  hide.classList.add("hide");
-  document.querySelector(".login").addEventListener("click", function() {
-    hide.classList.toggle("hide");
+let form = document.querySelector("aside .form");
+if (form != null) {
+  form.classList.add("hide");
+  document.querySelector("aside .login").addEventListener("click", function() {
+    console.log("ost");
+    form.classList.toggle("hide");
   });
 }
 

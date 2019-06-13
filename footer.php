@@ -4,7 +4,7 @@
     <article>
         <p><a href="#">Kundeservice</a></p>
         <p><a href="#">Handelsbetingelser</a></p>
-        <p><a href="#">Firsk frugt</a></p>
+        <p><a href="#">Frisk frugt</a></p>
         <p><a href="#">FAQ</a></p>
     </article>
     <article>
