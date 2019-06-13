@@ -12,6 +12,15 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) { ?>
         <p><span>Kategori: </span><?php echo $row['category'] ?></p>
         <p><span>Dato: </span><?php echo date("d/m-Y h:m", $row['date']) ?></p>
         <p><span>Oprettet af: </span><?php echo $row['dbUsername'] ?></p>
+        <?php
+        if (isset($_SESSION['accessLevel'])) {
+            if ($_SESSION['accessLevel'] == 1) {
+                echo "<a class='delete' title='DELETE' href='deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
+            } elseif ($_SESSION['accessLevel'] == 2 && $row['userId'] == $_SESSION['id']) {
+                echo "<a class='delete' title='DELETE' href='deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
+            }
+        }
+        ?>
         <button>KØB</button>
     </article>
 <?php

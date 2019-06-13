@@ -171,6 +171,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
       span {
         font-weight: bold;
       }
@@ -179,6 +180,15 @@ main {
       }
       img {
         width: 100%;
+      }
+      .delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: black;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 5px;
       }
       button {
         border: none;
@@ -320,6 +330,7 @@ footer {
       position: fixed;
       width: 100%;
       top: 0;
+      z-index: 1;
       > i {
         display: block;
       }

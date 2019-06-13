@@ -66,4 +66,4 @@
                                 echo $_SESSION['username'] . ", ";
                             } ?> til min frugt og grønt butik!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adip isicing elit. Repudiandae quaerat autem est, rem at voluptatum explicabo optio consequatur molestias qui neque saepe labore, volu ptas, accusantium es se eius. Perferendis, et cum.
-                Ducimus animi eligendi reiciendis, doloribus aliquam ratione tempore omnis porro mollitia possimus error atque laborum dolores necessitatibus fugiat voluptas magnam natus voluptate unde ve niam tenetur similique impedit Quaerat, veritatis sed!Sunt a c c u s amus asperiores animi molestias explicabo omnis molestiae.</p>
+                Ducimus animi eligendi reiciendis, doloribus aliquam ratione tempore omnis porro mollitia possimus error atque laborum dolores necessitatibus fugiat voluptas magnam natus voluptate unde ve niam tenetur similique impedit Quaerat, veritatis sed!Suntaccus amus asperiores animi molestias explicabo omnis molestiae.</p>

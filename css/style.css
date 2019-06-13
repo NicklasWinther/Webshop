@@ -220,6 +220,7 @@ main .products article {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 main .products article span {
@@ -232,6 +233,16 @@ main .products article p {
 
 main .products article img {
   width: 100%;
+}
+
+main .products article .delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 5px;
 }
 
 main .products article button {
@@ -383,6 +394,7 @@ footer article:last-child {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
   }
   .wrapper .top > i {
     display: block;
