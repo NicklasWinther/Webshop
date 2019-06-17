@@ -15,9 +15,9 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)) { ?>
         <?php
         if (isset($_SESSION['accessLevel'])) {
             if ($_SESSION['accessLevel'] == 1) {
-                echo "<a class='delete' title='DELETE' href='deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
+                echo "<a class='delete' title='DELETE' href='assets/deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
             } elseif ($_SESSION['accessLevel'] == 2 && $row['userId'] == $_SESSION['id']) {
-                echo "<a class='delete' title='DELETE' href='deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
+                echo "<a class='delete' title='DELETE' href='assets/deleteArticle.php?id=" . $row['productId'] . "'>&#10006</a>";
             }
         }
         ?>
