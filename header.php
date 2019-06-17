@@ -25,15 +25,15 @@
                     <li><a href="#">Om os</a></li>
                     <li><a href="#">Kontakt</a></li>
                     <?php if (isset($_SESSION['username'])) { ?>
-                        <li><a href="assets/logout.php">Log ud</a></li>
+                        <li><a href="assets/logout.php?url=<?php echo basename($_SERVER['PHP_SELF']) ?>">Log ud</a></li>
                     <?php } else { ?>
                         <li><a class="login">Log ind</a></li>
                         <li class="form">
-                            <form action="assets/login.php" method="post">
+                            <form action="assets/login.php?url=<?php echo basename($_SERVER['PHP_SELF']) ?>" method="post">
                                 <label for="formUsername">Brugernavn</label><br>
-                                <input type="text" name="formUsername" id="formUsername"><br>
-                                <label for="formPassword">Password</label><br>
-                                <input type="password" name="formPassword" id="formPassword"><br>
+                                <input type="text" name="formUsername" id="formUsername" placeholder="Brugernavn"><br>
+                                <label for="formPassword">Adgangskode</label><br>
+                                <input type="password" name="formPassword" id="formPassword" placeholder="Adgangskode"><br>
                                 <input type="submit" value="Log ind">
                             </form>
                         </li>

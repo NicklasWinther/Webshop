@@ -1,6 +1,7 @@
 <?php
 $formUsername = $_POST['formUsername'];
 $formPassword = $_POST['formPassword'];
+$url = $_GET["url"];
 
 require_once 'connect.php';
 
@@ -12,7 +13,7 @@ $statement->execute();
 if (empty($row = $statement->fetch())) {
     //Forkert login
     $dbh = null;
-    header("location: ../index.php");
+    header("location: ../$url");
 } else {
     //Korrekt login
     session_start();
@@ -20,5 +21,5 @@ if (empty($row = $statement->fetch())) {
     $_SESSION['accessLevel'] = $row['accessLevel'];
     $_SESSION['id'] = $row['userId'];
     $dbh = null;
-    header("location: ../index.php");
+    header("location: ../$url");
 }

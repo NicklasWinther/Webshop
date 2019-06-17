@@ -1,4 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header("location: ../index.php");
+$url = $_GET["url"];
+
+header("location: ../$url");

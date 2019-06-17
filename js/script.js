@@ -2,7 +2,6 @@ let form = document.querySelector("aside .form");
 if (form != null) {
   form.classList.add("hide");
   document.querySelector("aside .login").addEventListener("click", function() {
-    console.log("ost");
     form.classList.toggle("hide");
   });
 }
